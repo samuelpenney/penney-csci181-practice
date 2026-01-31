@@ -4,11 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Samuel Portfolio HomePage</title>
-    <base href="/penney-csci181-practice/" />
+    <!-- <base href="/penney-csci181-practice/"/> Live preview does not work with this-->
+     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-    <header>
-      <img src="Logo.png" alt="Logo" width="64px" height="64px"/>
+    <header id="page-header">
+      <a href="/" class="logo">
+        <img src="./images/Logo.png" alt="Logo" width="48px" height="48px" />
+        <span>Samuel Penney</span>
+      </a>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -17,6 +21,12 @@
       </nav>
     </header> 
     <main>
+      <section class="hero-section">
+        <p class="display-text">
+          Software Engineer & Cybersecurity Student
+        </p>
+        <a href="https://github.com/samuelpenney" class="button">View my Work</a>
+      </section>
       <h1>Home</h1>
     </main> 
   </body>

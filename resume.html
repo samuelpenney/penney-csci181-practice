@@ -1,33 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume</title>
-</head>
-<body>
-    <header>
-        <img src="Logo.png" alt="Logo" width="64px" height="64px"/>
-        <nav>
-            <ul>
-                <li><a href="./">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
-            </ul>
-        </nav>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header id="page-header">
+      <a href="/" class="logo">
+        <img src="./images/Logo.png" alt="Logo" width="48px" height="48px" />
+        <span>Samuel Penney</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume.html">Resume</a></li>
+        </ul>
+      </nav>
     </header>
-    <main>
-        <h1>Samuel Penney Resume</h1>
-        <section>
+    <main class="resume-container">
+        <section class="resume-header">
+            <h1>Samuel Penney</h1>
+            <p class="resume-subtitle">Software Engineer & Cybersecurity Student</p>
+        </section>
+        <section class="resume-section">
             <h2>Education</h2>
-            <p>Bachelor of Science in Computer Science, Concentration in Software Engineering, Certificate in Cybersecurity, University of Montana, 2028</p>
+            <div class="resume-entry">
+            <div class="entry-header">
+                <h3>Bachelor of Science in Computer Science</h3>
+                <span class="date">Expected May 2028</span>
+            </div>
+            <p class="institution">University of Montana, Missoula, MT</p>
+            <ul class="details">
+                <li>Concentration in Software Engineering</li>
+            </ul>
+            </div>
+            <div class="resume-entry">
+                <div class="entry-header">
+                    <h3>Certificate in Technical Studies</h3>
+                    <span class="date">Expected May 2028</span>
+                </div>
+                <p class="institution">University of Montana, Missoula, MT</p>
+                <ul class="details">
+                    <li>Focus in Cybersecurity</li>
+                </ul>
+            </div>
+            <div class="resume-entry">
+            <div class="entry-header">
+                <h3>High School Diploma</h3>
+                <span class="date">2024</span>
+            </div>
+            <p class="institution">
+                William J. Palmer High School, Colorado Springs, CO
+            </p>
+            </div>
         </section>
-        <section>
+        <section class="resume-section">
             <h2>Professional Experience</h2>
-            <p>No professional experience yet.</p>
+            <div class="resume-entry">
+            <div class="entry-header">
+                <h3>Dishwasher</h3>
+                <span class="date">2023 - 2024</span>
+            </div>
+            <p class="institution">
+                Red Leg Brewing Company, Colorado Springs, CO
+            </p>
+            </div>
         </section>
-        <section>
-            <h2>Skills</h2> 
-            <p>Programming Languages: Python, Java, C++</p>
+        <section class="resume-section">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">C++</span>
+            </div>
         </section>
     </main>
 </body>

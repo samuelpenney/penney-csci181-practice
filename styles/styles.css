@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+html {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  color: #7e8391;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: "JetBrains Mono", monospace;
+  -webkit-font-smoothing: antialiased;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #111827;
+  line-height: 1.25;
+  text-wrap: balance;
+  font-family: "JetBrains Mono", monospace;
+}
+
+button,
+.button {
+  padding: 0.75rem 1rem;
+  background-color: #ffffff;
+  color: #003ac0;
+  border-radius: 0.75rem;
+  border: 2px solid #003ac0;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+.button:hover,
+button:hover {
+    background-color: #a2a2a2;
+    color: #001d5e;
+    border: 2px solid #001d5e;
+}
+
+.display-text {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3.5rem;
+}
+.hero-section {
+  background-image: url("../images/GravSimProj.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+section.page-section {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid #d4d9e2;
+  margin: 0 auto 1rem auto;
+  width: 100%;
+  max-width: 1920px;
+}
+
+#page-header {
+  padding: 1rem 1.5rem;
+}
+
+#page-header .logo {
+  color: #3d424c;
+  text-decoration: none;
+  font-size: 1.333rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.resume-header {
+    align-items: center;
+    text-align: center;
+}
+
+/* Resume Styles */
+.resume-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.resume-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+.resume-subtitle {
+  font-size: 1.125rem;
+  color: #003ac0;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.resume-section {
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  background-color: #f9fafb;
+  border-radius: 0.75rem;
+  border: 1px solid #e5e7eb;
+}
+
+.resume-section h2 {
+  font-size: 1.5rem;
+  color: #003ac0;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #003ac0;
+  /*text-align: center; */ /* tried it and it didn't look good */
+}
+
+.resume-entry {
+  margin-bottom: 1.5rem;
+}
+
+.resume-entry:last-child {
+  margin-bottom: 0;
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.entry-header h3 {
+  font-size: 1.25rem;
+  color: #111827;
+  margin: 0;
+}
+
+.date {
+  font-size: 0.875rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.institution {
+  color: #4b5563;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.details {
+  margin: 0.75rem 0 0 1.25rem;
+  color: #4b5563;
+}
+
+.details li {
+  margin-bottom: 0.25rem;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skill-tag {
+  padding: 0.5rem 1rem;
+  background-color: #003ac0;
+  color: #ffffff;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
