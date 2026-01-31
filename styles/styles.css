@@ -68,9 +68,9 @@ button,
 }
 .button:hover,
 button:hover {
-    background-color: #a2a2a2;
-    color: #001d5e;
-    border: 2px solid #001d5e;
+  background-color: #a2a2a2;
+  color: #001d5e;
+  border: 2px solid #001d5e;
 }
 
 .display-text {
@@ -83,11 +83,8 @@ button:hover {
   background-size: cover;
   background-position: center;
   min-height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 3rem;
+  text-align: center;
 }
 
 section.page-section {
@@ -107,19 +104,25 @@ section.page-section {
   color: #3d424c;
   text-decoration: none;
   font-size: 1.333rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+}
+
+#page-header .logo img,
+#page-header .logo span {
+  vertical-align: middle;
+}
+
+#page-header .logo span {
+  display: inline-block;
+  margin-left: 0.5rem;
 }
 
 .resume-header {
-    align-items: center;
-    text-align: center;
+  align-items: center;
+  text-align: center;
 }
 
-/* Resume Styles */
 .resume-container {
-  max-width: 900px;
+  max-width: 950px;
   margin: 0 auto;
   padding: 2rem;
 }
@@ -163,12 +166,7 @@ section.page-section {
 }
 
 .entry-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
   margin-bottom: 0.5rem;
-  flex-wrap: wrap;
-  gap: 0.5rem;
 }
 
 .entry-header h3 {
@@ -181,6 +179,8 @@ section.page-section {
   font-size: 0.875rem;
   color: #6b7280;
   font-weight: 500;
+  display: block;
+  text-align: right;
 }
 
 .institution {
@@ -198,12 +198,6 @@ section.page-section {
   margin-bottom: 0.25rem;
 }
 
-.skills-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
 .skill-tag {
   padding: 0.5rem 1rem;
   background-color: #003ac0;
@@ -211,4 +205,6 @@ section.page-section {
   border-radius: 1rem;
   font-size: 0.875rem;
   font-weight: 500;
+  display: inline-block;
+  margin: 0 0.75rem 0.75rem 0;
 }
