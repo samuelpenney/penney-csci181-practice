@@ -83,8 +83,11 @@ button:hover {
   background-size: cover;
   background-position: center;
   min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 3rem;
-  text-align: center;
 }
 
 section.page-section {
@@ -104,16 +107,10 @@ section.page-section {
   color: #3d424c;
   text-decoration: none;
   font-size: 1.333rem;
-}
-
-#page-header .logo img,
-#page-header .logo span {
-  vertical-align: middle;
-}
-
-#page-header .logo span {
-  display: inline-block;
-  margin-left: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 .resume-header {
@@ -121,8 +118,26 @@ section.page-section {
   text-align: center;
 }
 
+.Link-List {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.Link-List li a {
+  text-decoration: none;
+  color: #003ac0;
+  padding: 1px 15px;
+  border: 1px solid #111827;
+  border-radius: 1rem;
+}
+
+/* Resume Styles */
 .resume-container {
-  max-width: 950px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 2rem;
 }
@@ -166,7 +181,13 @@ section.page-section {
 }
 
 .entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
   margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .entry-header h3 {
@@ -179,8 +200,6 @@ section.page-section {
   font-size: 0.875rem;
   color: #6b7280;
   font-weight: 500;
-  display: block;
-  text-align: right;
 }
 
 .institution {
@@ -198,6 +217,12 @@ section.page-section {
   margin-bottom: 0.25rem;
 }
 
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
 .skill-tag {
   padding: 0.5rem 1rem;
   background-color: #003ac0;
@@ -205,6 +230,125 @@ section.page-section {
   border-radius: 1rem;
   font-size: 0.875rem;
   font-weight: 500;
-  display: inline-block;
-  margin: 0 0.75rem 0.75rem 0;
+}
+
+.Contact-Title {
+  text-align: center;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.Contact-Title h2 {
+  color: #003ac0;
+  font-size: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.Contact-Box {
+  text-align: center;
+  align-items: center;
+  padding-top: 0.5rem;
+}
+
+.Contact-Submit {
+  text-align: center;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 2px solid #d4d9e2;
+  border-radius: 0.5rem;
+  font-family: inherit;
+  color: #111827;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #003ac0;
+  box-shadow: 0 0 0 3px rgba(0, 58, 192, 0.1);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group label {
+  font-size: 1.125rem;
+  color: #003ac0;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.form-submit {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.con-section {
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  background-color: #f9fafb;
+  border-radius: 0.75rem;
+  border: 1px solid #e5e7eb;
+}
+
+/* Resume Table Styles */
+.resume-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.75rem;
+  background-color: #ffffff;
+  border: 1px solid #003ac0;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.resume-section th,
+.resume-section td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.resume-section thead th {
+  background-color: #f3f4f6;
+  color: #111827;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.resume-section tbody th {
+  font-weight: 500;
+  color: #111827;
+}
+
+.resume-section tbody tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+.resume-section tbody tr:hover {
+  background-color: #eef2ff;
 }

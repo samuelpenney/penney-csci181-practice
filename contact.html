@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samuel Portfolio Contact Page</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header id="page-header" class="page-header">
+      <a href="index.html" class="logo">
+        <img src="./images/Logo.png" alt="Logo" width="48px" height="48px" />
+        <span>Samuel Penney</span>
+      </a>
+      <nav>
+        <ul class="Link-List">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form class="contact-form">
+        <section class="form-group">
+          <label for="Name">Enter Your Name:</label>
+          <input type="text" id="Name" name="Name" required />
+        </section>
+        <section class="form-group">
+          <label for="Email">Enter Your Email:</label>
+          <input type="email" id="Email" name="Email" required />
+        </section>
+        <section class="form-group">
+          <label for="Message">Enter Your Message:</label>
+          <textarea maxlength="500" id="Message" name="Message" required></textarea>
+        </section>
+        <section class="form-submit">
+          <button type="submit">Get in Touch</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
