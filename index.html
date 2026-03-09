@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Samuel Portfolio Home Page</title>
     <!-- <base href="/penney-csci181-practice/"/> Live preview does not work with this-->
-     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <header id="page-header" class="page-header">
@@ -21,13 +22,13 @@
           <li><a href="bento-grid.html">Bento Grid</a></li>
         </ul>
       </nav>
-    </header> 
+    </header>
     <main>
       <section class="hero-section">
-        <p class="display-text">
-          Software Engineer & Cybersecurity Student
-        </p>
-        <a href="https://github.com/samuelpenney" class="button">View my Work</a>
+        <p class="display-text">Software Engineer & Cybersecurity Student</p>
+        <a href="https://github.com/samuelpenney" class="button"
+          >View my Work</a
+        >
       </section>
       <section class="index-body">
         <h1>Home</h1>
@@ -58,7 +59,48 @@
             </section>
           </section>
         </section>
+        <section class="index-section py-8">
+          <h2>Testimonials</h2>
+          <ul
+            class="grid list-none grid-cols-1 gap-6 p-0 md:grid-cols-2 lg:grid-cols-3"
+          >
+            <li
+              class="testimonial-card rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
+            >
+              <p class="text-5xl leading-none text-slate-300">"</p>
+              <p class="mt-3 text-base leading-relaxed text-slate-700">
+                CSCI 232 is changing the way on why I think about the code I write and I am improving!
+              </p>
+              <div class="mt-6 border-t border-slate-100 pt-4">
+                <p class="text-sm font-semibold text-slate-900">Sam in CSCI232</p>
+              </div>
+            </li>
+            <li
+              class="testimonial-card rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
+            >
+              <p class="text-5xl leading-none text-slate-300">"</p>
+              <p class="mt-3 text-base leading-relaxed text-slate-700">
+                181 showed me how to create a website and a complete portfolio that I can take with me in my future as a computer science student
+              </p>
+              <div class="mt-6 border-t border-slate-100 pt-4">
+                <p class="text-sm font-semibold text-slate-900">Sam in CSCI181</p>
+              </div>
+            </li>
+
+            <li
+              class="testimonial-card rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
+            >
+              <p class="text-5xl leading-none text-slate-300">"</p>
+              <p class="mt-3 text-base leading-relaxed text-slate-700">
+                I've learned alot about creating programs and use cases for them!
+              </p>
+              <div class="mt-6 border-t border-slate-100 pt-4">
+                <p class="text-sm font-semibold text-slate-900">Sam in CSCI152</p>
+              </div>
+            </li>
+          </ul>
+        </section>
       </section>
-    </main> 
+    </main>
   </body>
 </html>
