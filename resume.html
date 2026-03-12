@@ -7,121 +7,122 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header id="page-header" class="page-header">
       <a href="index.html" class="logo">
         <img src="./images/Logo.png" alt="Logo" width="48px" height="48px" />
         <span>Samuel Penney</span>
       </a>
-      <nav>
+      <nav aria-label="Primary navigation">
         <ul class="Link-List">
           <li><a href="index.html">Home</a></li>
-          <li><a href="resume.html">Resume</a></li>
+          <li><a href="resume.html" aria-current="page">Resume</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="bento-grid.html">Bento Grid</a></li>
         </ul>
       </nav>
     </header>
-    <main class="resume-container">
-        <section class="resume-header">
-            <h1>Samuel Penney</h1>
-            <p class="resume-subtitle">Software Engineer & Cybersecurity Student</p>
+    <main id="main-content" class="resume-container">
+      <section class="resume-header">
+        <h1>Samuel Penney</h1>
+        <p class="resume-subtitle">Software Engineer & Cybersecurity Student</p>
+      </section>
+      <section class="resume-section">
+        <h2>Education</h2>
+        <section class="resume-entry">
+          <section class="entry-header">
+            <h3>Bachelor of Science in Computer Science</h3>
+            <span class="date">Expected May 2028</span>
+          </section>
+          <p class="institution">University of Montana, Missoula, MT</p>
+          <ul class="details">
+            <li>Concentration in Software Engineering</li>
+          </ul>
         </section>
-        <section class="resume-section">
-            <h2>Education</h2>
-            <section class="resume-entry">
-            <section class="entry-header">
-                <h3>Bachelor of Science in Computer Science</h3>
-                <span class="date">Expected May 2028</span>
-            </section>
-            <p class="institution">University of Montana, Missoula, MT</p>
-            <ul class="details">
-                <li>Concentration in Software Engineering</li>
-            </ul>
-            </section>
-            <section class="resume-entry">
-                <section class="entry-header">
-                    <h3>Certificate in Technical Studies in Cybersecurity</h3>
-                    <span class="date">Expected May 2028</span>
-                </section>
-                <p class="institution">University of Montana, Missoula, MT</p>
-            </section>
-            <section class="resume-entry">
-            <section class="entry-header">
-                <h3>High School Diploma</h3>
-                <span class="date">2024</span>
-            </section>
-            <p class="institution">
-                William J. Palmer High School, Colorado Springs, CO
-            </p>
+        <section class="resume-entry">
+          <section class="entry-header">
+            <h3>Certificate in Technical Studies in Cybersecurity</h3>
+            <span class="date">Expected May 2028</span>
+          </section>
+          <p class="institution">University of Montana, Missoula, MT</p>
         </section>
+        <section class="resume-entry">
+          <section class="entry-header">
+            <h3>High School Diploma</h3>
+            <span class="date">2024</span>
+          </section>
+          <p class="institution">
+            William J. Palmer High School, Colorado Springs, CO
+          </p>
         </section>
-        <section class="resume-section">
-            <h2>Significant Courses</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th scope="col">Course</th>
-                        <th scope="col">Year Taken</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">Data Structures and Algorithms</th>
-                        <th scope="row">Spring 2026</th>
-                    </tr>
-                    <tr>
-                        <th scope="row">Web Development</th>
-                        <th scope="row">Spring 2026</th>
-                    </tr>
-                    <tr>
-                        <th scope="row">Database Design</th>
-                        <th scope="row">Autumn 2026</th>
-                    </tr>
-                    <tr>
-                        <th scope="row">Advance Software Engineering</th>
-                        <th scope="row">Spring 2027</th>
-                    </tr>
-                    <tr>
-                        <th scope="row">Software Design and Development</th>
-                        <th scope="row">Autumn 2027</th>
-                    </tr>
-                    <tr>
-                        <th scope="row">Enterprise Security</th>
-                        <th scope="row">Spring 2027</th>
-                    </tr>
-                </tbody>
-            </table>
+      </section>
+      <section class="resume-section">
+        <h2>Significant Courses</h2>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Course</th>
+              <th scope="col">Year Taken</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Data Structures and Algorithms</th>
+              <th scope="row">Spring 2026</th>
+            </tr>
+            <tr>
+              <th scope="row">Web Development</th>
+              <th scope="row">Spring 2026</th>
+            </tr>
+            <tr>
+              <th scope="row">Database Design</th>
+              <th scope="row">Autumn 2026</th>
+            </tr>
+            <tr>
+              <th scope="row">Advance Software Engineering</th>
+              <th scope="row">Spring 2027</th>
+            </tr>
+            <tr>
+              <th scope="row">Software Design and Development</th>
+              <th scope="row">Autumn 2027</th>
+            </tr>
+            <tr>
+              <th scope="row">Enterprise Security</th>
+              <th scope="row">Spring 2027</th>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="resume-section">
+        <h2>Professional Experience</h2>
+        <section class="resume-entry">
+          <section class="entry-header">
+            <h3>Dishwasher</h3>
+            <span class="date">2023 - 2024</span>
+          </section>
+          <p class="institution">
+            Red Leg Brewing Company, Colorado Springs, CO
+          </p>
         </section>
-        <section class="resume-section">
-            <h2>Professional Experience</h2>
-            <section class="resume-entry">
-            <section class="entry-header">
-                <h3>Dishwasher</h3>
-                <span class="date">2023 - 2024</span>
-            </section>
-            <p class="institution">
-                Red Leg Brewing Company, Colorado Springs, CO
-            </p>
-            </section>
+      </section>
+      <section class="resume-section">
+        <h2>Skills</h2>
+        <section class="resume-entry">
+          <section class="entry-header">
+            <h3>Programming Languages</h3>
+          </section>
+          <section class="skills-container">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">C++</span>
+          </section>
+          <section class="entry-header">
+            <h3></h3>
+          </section>
         </section>
-        <section class="resume-section">
-            <h2>Skills</h2>
-            <section class="resume-entry">
-                <section class="entry-header">
-                    <h3>Programming Languages</h3>
-                </section>
-                <section class="skills-container">
-                    <span class="skill-tag">HTML</span>
-                    <span class="skill-tag">CSS</span>
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">Java</span>
-                    <span class="skill-tag">C++</span>
-                </section>
-                <section class="entry-header">
-                    <h3></h3>
-                </section>
-            </section>
-        </section>
+      </section>
     </main>
-</body>
+  </body>
 </html>

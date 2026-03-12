@@ -7,21 +7,22 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header id="page-header" class="page-header">
       <a href="index.html" class="logo">
         <img src="./images/Logo.png" alt="Logo" width="48px" height="48px" />
         <span>Samuel Penney</span>
       </a>
-      <nav>
+      <nav aria-label="Primary navigation">
         <ul class="Link-List">
           <li><a href="index.html">Home</a></li>
           <li><a href="resume.html">Resume</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
           <li><a href="bento-grid.html">Bento Grid</a></li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main id="main-content">
       <form class="contact-form">
         <section class="form-group">
           <label for="Name">Enter Your Name:</label>
@@ -33,7 +34,12 @@
         </section>
         <section class="form-group">
           <label for="Message">Enter Your Message:</label>
-          <textarea maxlength="500" id="Message" name="Message" required></textarea>
+          <textarea
+            maxlength="500"
+            id="Message"
+            name="Message"
+            required
+          ></textarea>
         </section>
         <section class="form-submit">
           <button type="submit">Get in Touch</button>
