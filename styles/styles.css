@@ -1,5 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 
+:root {
+  --bg: #ffffff;
+  --text: #7e8391;
+  --heading: #111827;
+  --header-bg: #ffffff;
+  --surface: #f9fafb;
+  --surface-2: #ffffff;
+  --border: #d4d9e2;
+  --button-bg: #ffffff;
+  --button-text: #003ac0;
+  --button-border: #003ac0;
+  --button-hover-bg: #a2a2a2;
+  --button-hover-text: #001d5e;
+  --link: #003ac0;
+}
+
+body.dark {
+  --bg: #0b1220;
+  --text: #e5e7eb;
+  --heading: #f8fafc;
+  --header-bg: #111827;
+  --surface: #1f2937;
+  --surface-2: #1f2937;
+  --border: #334155;
+  --button-bg: #1e293b;
+  --button-text: #e2e8f0;
+  --button-border: #64748b;
+  --button-hover-bg: #334155;
+  --button-hover-text: #f8fafc;
+  --link: #93c5fd;
+}
+
 html {
   font-family: "JetBrains Mono", monospace;
   font-size: 16px;
@@ -18,7 +50,8 @@ html {
 
 body {
   min-height: 100vh;
-  color: #7e8391;
+  color: var(--text);
+  background: var(--bg);
   font-size: 1rem;
   line-height: 1.5rem;
   font-family: "JetBrains Mono", monospace;
@@ -48,7 +81,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #111827;
+  color: var(--heading);
   line-height: 1.25;
   text-wrap: balance;
   font-family: "JetBrains Mono", monospace;
@@ -57,10 +90,10 @@ h6 {
 button,
 .button {
   padding: 0.75rem 1rem;
-  background-color: #ffffff;
-  color: #003ac0;
+  background-color: var(--button-bg);
+  color: var(--button-text);
   border-radius: 0.75rem;
-  border: 2px solid #003ac0;
+  border: 2px solid var(--button-border);
   font-weight: 500;
   text-decoration: none;
   display: inline-block;
@@ -68,9 +101,9 @@ button,
 }
 .button:hover,
 button:hover {
-  background-color: #a2a2a2;
-  color: #001d5e;
-  border: 2px solid #001d5e;
+  background-color: var(--button-hover-bg);
+  color: var(--button-hover-text);
+  border: 2px solid var(--button-border);
 }
 
 .display-text {
@@ -101,15 +134,21 @@ section.page-section {
 
 #page-header {
   padding: 1rem 1.5rem;
-  background-color: #ffffff;
+  background-color: var(--header-bg);
+  border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
   z-index: 1000;
   isolation: isolate;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 #page-header .logo {
-  color: #3d424c;
+  color: var(--heading);
   text-decoration: none;
   font-size: 1.333rem;
   display: flex;
@@ -153,9 +192,9 @@ section.page-section {
 
 .Link-List li a {
   text-decoration: none;
-  color: #003ac0;
+  color: var(--link);
   padding: 1px 15px;
-  border: 1px solid #111827;
+  border: 1px solid var(--heading);
   border-radius: 1rem;
 }
 
@@ -197,9 +236,9 @@ nav a[aria-current="page"] {
 .project-card {
   margin-bottom: 2.5rem;
   padding: 1.5rem;
-  background-color: #f9fafb;
+  background-color: var(--surface);
   border-radius: 0.75rem;
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--border);
 }
 
 .project-title h3 {
@@ -236,9 +275,9 @@ nav a[aria-current="page"] {
 .resume-section {
   margin-bottom: 2.5rem;
   padding: 1.5rem;
-  background-color: #f9fafb;
+  background-color: var(--surface);
   border-radius: 0.75rem;
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--border);
 }
 
 .resume-section h2 {
@@ -388,9 +427,9 @@ textarea {
 .con-section {
   margin-bottom: 2.5rem;
   padding: 1.5rem;
-  background-color: #f9fafb;
+  background-color: var(--surface);
   border-radius: 0.75rem;
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--border);
 }
 
 /* Resume Table Styles */
@@ -398,8 +437,8 @@ textarea {
   width: 100%;
   border-collapse: collapse;
   margin-top: 0.75rem;
-  background-color: #ffffff;
-  border: 1px solid #003ac0;
+  background-color: var(--surface-2);
+  border: 1px solid var(--button-border);
   border-radius: 0.75rem;
   overflow: hidden;
 }
@@ -408,23 +447,23 @@ textarea {
 .resume-section td {
   padding: 0.75rem 1rem;
   text-align: left;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid var(--border);
 }
 
 .resume-section thead th {
-  background-color: #f3f4f6;
-  color: #111827;
+  background-color: var(--surface);
+  color: var(--heading);
   font-weight: 600;
   font-size: 0.95rem;
 }
 
 .resume-section tbody th {
   font-weight: 500;
-  color: #111827;
+  color: var(--heading);
 }
 
 .resume-section tbody tr:nth-child(even) {
-  background-color: #f9fafb;
+  background-color: var(--surface);
 }
 
 .resume-section tbody tr:hover {
@@ -445,8 +484,8 @@ textarea {
 .bento-grid .grid-item {
   border-radius: 1rem;
   overflow: hidden;
-  border: 1px solid #d4d9e2;
-  background-color: #f9fafb;
+  border: 1px solid var(--border);
+  background-color: var(--surface);
   position: relative;
 }
 
@@ -492,6 +531,24 @@ textarea {
 .bento-grid .grid-item:nth-child(7) {
   grid-column: 1 / 2;
   grid-row: 1 / 3;
+}
+
+body.dark .testimonial-card {
+  background-color: var(--surface) !important;
+  border-color: var(--border) !important;
+}
+
+body.dark .testimonial-card .text-slate-700,
+body.dark .testimonial-card .text-slate-900 {
+  color: var(--text) !important;
+}
+
+body.dark .testimonial-card .text-slate-300 {
+  color: #94a3b8 !important;
+}
+
+body.dark .testimonial-card .border-slate-100 {
+  border-color: var(--border) !important;
 }
 
 @media (prefers-reduced-motion: reduce) {
