@@ -561,3 +561,55 @@ body.dark .testimonial-card .border-slate-100 {
     scroll-behavior: auto !important;
   }
 }
+
+/* Weather Page */
+.weather-page-main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.weather-page-main h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.weather-output {
+  min-width: min(90vw, 24rem);
+  min-height: 8rem;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--border);
+  background-color: var(--surface);
+  display: grid;
+  place-items: center;
+}
+
+.weather-loading {
+  color: var(--text);
+}
+
+.weather-error {
+  color: #b91c1c;
+}
+
+.weather-fallback {
+  color: var(--text);
+}
+
+.weather-temp {
+  font-size: 4rem;
+  line-height: 1;
+  color: var(--heading);
+  margin: 0;
+}
+
+.weather-forecast {
+  margin-top: 0.75rem;
+  color: var(--text);
+  font-size: 1.125rem;
+}
